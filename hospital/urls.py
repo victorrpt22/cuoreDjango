@@ -1,6 +1,7 @@
-from django.urls import path
+from django.conf.urls import url
 
-from . import views
+from hospital import views
 
 urlpatterns = [
+    url(r'^addresses/$', views.AddressList.as_view(), name='address_list'),
 ]
