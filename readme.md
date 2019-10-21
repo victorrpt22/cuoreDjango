@@ -19,11 +19,17 @@ python manage.py makemigrations
 ```bash
 python manage.py migrate
 ```
-### create migrations.
+
+### create super user..
+```bash
+python manage.py createsuperuser
+```
+
+### to run server.
 ```bash
 python manage.py runserver
 ```
-
+If different setting file is need, use flag `--settings=<path_to_file>`
 
 ### run server
 
