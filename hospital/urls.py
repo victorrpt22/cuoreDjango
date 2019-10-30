@@ -1,7 +1,8 @@
-from django.urls import path
+from django.conf.urls import url
 
-from . import views
+from hospital import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    url(r'^addresses/$', views.AddressList.as_view(), name='address_list'),
+    url(r'^accounts/$', views.AccountList.as_view(), name='address_list'),
 ]
